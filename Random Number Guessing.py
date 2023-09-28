@@ -1,6 +1,8 @@
-#Made By TheUnknownScripter In Python | This is a simple little mini game for fun that you have to pick the difficulty and guess the number between 1 and x with some simple little hint's have fun
+# Made By TheUnknownScripter In Python | This is a simple little mini game for fun that you have to pick the difficulty and guess the number between 1 and x with some simple little hint's have fun
+# Can be ran in python console or visual studio and sum other thing's etc
 
 import random
+import time
 
 def Randomizer(x):
     Rand = random.randint(1, x)
@@ -16,6 +18,8 @@ def Randomizer(x):
         except ValueError:
             print("Yea no Invalid Input has to be a number try again")
     print(f"You guessed the right number : {CurrentGuess}")
+    print("Closing in 5 Second's")
+    time.sleep(5)
 
 Difficultys = ["easy", "normal", "hard", "extreme", "godly"]
 
